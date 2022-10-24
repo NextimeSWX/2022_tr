@@ -1,11 +1,14 @@
 #include <unistd.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include "stu.h"
 
-int i;
-int nb;
-int main(int a, char **b)
+//int stu_puts(const char *str);
+//unsigned int stu_strlen(const char *str);
+
+int tr(int a, char **b)
 {
+    int i;
+    int nb;
     nb = 0;
     **b = 0;
     char *buffer = malloc(sizeof(char) * 10);
@@ -19,11 +22,11 @@ int main(int a, char **b)
             if (buffer[i] == b[1][nb]) {
                 buffer[i] = b[2][nb];
             }
-            write(1, &buffer[i], 1);
             i = i + 1;
         }
         nb = nb + 1;
     }
+    stu_puts(buffer);
     free(buffer);
     return a;
 }
