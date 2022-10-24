@@ -11,8 +11,6 @@ int tr(int a, char **b)
     int nb;
     nb = 0;
     **b = 0;
-    char *buffer = malloc(sizeof(char) * 10);
-    int size_read = read(0, buffer, 10);
     buffer[size_read] = '\0';
     if (!buffer || size_read == -1)
         return 0;
