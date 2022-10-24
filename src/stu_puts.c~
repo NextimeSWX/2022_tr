@@ -1,0 +1,15 @@
+#include <unistd.h>
+
+unsigned int stu_strlen(const char *str);
+int stu_puts(const char *str)
+{
+    char n;
+    int m;
+    int nb;
+    n = '\n';
+    m = stu_strlen(str);
+    nb = write(1, str, sizeof(char)*m);
+    write(1, &n, 1);
+    m = m + 1;
+    return(nb);
+}
