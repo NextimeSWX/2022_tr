@@ -1,4 +1,0 @@
-#ifndef STUPUTS_H_
-#define STUPUTS_H_
-int stu_puts(const char *str);
-#endif
