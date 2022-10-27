@@ -1,3 +1,11 @@
+/*
+ * E89 Pedagogical & Technical Lab
+ * project:     tr
+ * created on:  2022-10-27 - 17:39 +0200
+ * 1st author:  evan.lebihan - evan.lebihan
+ * description: stu_puts
+ */
+
 #include <unistd.h>
 #include "stu.h"
 

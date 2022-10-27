@@ -1,3 +1,11 @@
+/*
+ * E89 Pedagogical & Technical Lab
+ * project:     tr
+ * created on:  2022-10-27 - 17:36 +0200
+ * 1st author:  evan.lebihan - evan.lebihan
+ * description: main
+ */
+
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>

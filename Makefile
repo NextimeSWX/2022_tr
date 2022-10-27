@@ -5,6 +5,9 @@ SRCS	=	src/tr.c		\
 		src/stu_puts.c		\
 		src/stu_strlen.c
 
+
+
+
 OBJS	=	$(SRCS:.c=.o)
 
 CFLAGS	+=	-W -Wall -Wextra -Werror -Iinclude/
