@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include "stu.h"
 
-//int stu_puts(const char *str);
-//unsigned int stu_strlen(const char *str);
-
 int tr(char **b, char *buffer)
 {
     int i;

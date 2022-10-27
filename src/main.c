@@ -1,8 +1,7 @@
 #include <unistd.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "stu.h"
-
-unsigned int stu_strlen(const char *str);
 
 int main(int a, char ** b)
 {
@@ -13,7 +12,7 @@ int main(int a, char ** b)
     char * buffer = malloc(sizeof(char)*10);
     size_read = read(0, buffer, 9);
     buffer[size_read] = '\0';
-    tr(b,buffer);
+    tr(b, buffer);
     stu_puts(buffer);
     free(buffer);
     return a;
