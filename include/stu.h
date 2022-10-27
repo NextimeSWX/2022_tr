@@ -2,4 +2,5 @@
 #define STU_H_
 int stu_puts(const char *str);
 int tr(char **, char *buffer);
+unsigned int stu_strlen(const char *str);
 #endif
