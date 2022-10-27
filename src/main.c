@@ -23,5 +23,5 @@ int main(int a, char ** b)
     tr(b, buffer);
     stu_puts(buffer);
     free(buffer);
-    return a;
+    return (a);
 }

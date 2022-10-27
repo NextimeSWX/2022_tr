@@ -10,7 +10,7 @@
 #include <stdlib.h>
 #include "stu.h"
 
-int tr(char **b, char *buffer)
+int tr (char **b, char *buffer)
 {
     int i;
     int nb;
@@ -27,5 +27,5 @@ int tr(char **b, char *buffer)
         }
         nb = nb + 1;
     }
-    return nb;
+    return (nb);
 }
