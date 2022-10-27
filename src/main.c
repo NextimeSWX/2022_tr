@@ -2,11 +2,19 @@
 #include <stdlib.h>
 #include "stu.h"
 
-int tr(int a, char **b, char *buffer, int size_read);
+unsigned int stu_strlen(const char *str);
 
-int main(void)
+int main(int a, char ** b)
 {
-    *buffer = malloc(sizeof(char)*10);
-    size_read = read(0, buffer, 50);
-    tr(size_read);
+    int size_read;
+
+    size_read = 0;
+
+    char * buffer = malloc(sizeof(char)*10);
+    size_read = read(0, buffer, 9);
+    buffer[size_read] = '\0';
+    tr(b,buffer);
+    stu_puts(buffer);
+    free(buffer);
+    return a;
 }

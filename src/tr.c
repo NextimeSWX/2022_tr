@@ -5,14 +5,12 @@
 //int stu_puts(const char *str);
 //unsigned int stu_strlen(const char *str);
 
-int tr(int a, char **b)
+int tr(char **b, char *buffer)
 {
     int i;
     int nb;
     nb = 0;
-    **b = 0;
-    buffer[size_read] = '\0';
-    if (!buffer || size_read == -1)
+    if (!buffer)
         return 0;
     while (b[1][nb] != '\0') {
         i = 0;
@@ -24,7 +22,5 @@ int tr(int a, char **b)
         }
         nb = nb + 1;
     }
-    stu_puts(buffer);
-    free(buffer);
-    return a;
+    return nb;
 }
